@@ -1,5 +1,6 @@
 * {
     /* border: 2px solid black; */
+    font-family: Arial;
 }
 
 html body {
@@ -49,6 +50,83 @@ img {
 }
 
 #main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: lightgray;
     width: 60vw;
+    min-width: 450px;
+}
+
+#hero , #mid , #foot{
+    padding-left: 40px;
+    flex: 1;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    max-height: 250px;
+}
+
+p {
+    font-weight: bold;
+    padding-right: 100px;
+}
+
+#hero p:first-child {
+    margin-top: 20%;
+    margin-bottom: 0;
+}
+
+#hero p:nth-child(2) {
+    margin-top: 0;
+}
+
+#hero p:last-child {
+    margin-bottom: 40px;
+}
+
+h2 {
+    padding-top: 10px;
+}
+
+#mid {
+    background-color: white;
+    padding-bottom: 30px;
+    max-height: 250px;
+    box-shadow: 0px 5px 5px gray;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-size: 10px;
+}
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    box-shadow: 3px 3px 5px gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 25px;
+    background-color: rgb(150,150,150);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(100,100,100);
+}
+
+#footnote {
+    font-size: 13px;
 }
