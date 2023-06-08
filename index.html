@@ -11,6 +11,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -18,7 +21,8 @@
         <![endif]-->
         <div id="splash">
             <div id="logo">
-                <div id="logo-icon"></div>
+                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" 
+                id="logo-icon"></img>
                 <div id="logo-text">REACH</div>
             </div>
             <img src="david-troeger-unsplash.jpg">
@@ -31,7 +35,7 @@
             </div>
             <div id="mid">
                 <h2>Let's do this!</h2>
-                <form>
+                <form id="my-form" method="get" action="">
                     <div class="form-block">
                         <label for="first-name">First Name</label>
                         <input type="text" name="first-name" id="first-name" required>
@@ -51,6 +55,7 @@
                     <div class="form-block">
                         <label for="pass">Password</label>
                         <input type="password" name="pass" id="pass" required>
+                        <div id="dont-match">* passwords do not match</div>
                     </div>
                     <div class="form-block">
                         <label for="conf-pass">Confirm Password</label>
@@ -59,10 +64,10 @@
                 </form>
             </div>
             <div id="foot">
-                <button>Create Account</button>
+                <button form="my-form">Create Account</button>
                 <div id="footnote">Already have an account? <a href="">Log in</a></div>
             </div>
         </div>
-        <script src="" async defer></script>
+        <script src="script.js" async defer></script>
     </body>
 </html>
